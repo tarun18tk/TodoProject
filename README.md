@@ -12,10 +12,8 @@ The Todo Project is a Spring Boot application that leverages Hibernate and JPA f
 - [Project Description](#project-description)
 - [Getting Started](#getting-started)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Features](#features)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Getting Started
 
@@ -30,16 +28,16 @@ Access the application in your web browser at [http://localhost:8080](http://loc
 
 ## Features
 
-- Database: Utilizes Hibernate and JPA repositories for efficient database operations.
-- Frontend: The user interface is created using HTML, CSS, and Bootstrap, providing an aesthetically pleasing and responsive design.
+- **Database**: Utilizes Hibernate and JPA repositories for efficient database operations.
+- **Frontend**: The user interface is created using HTML, CSS, and Bootstrap, providing an aesthetically pleasing and responsive design.
 - To-Do Management: Allows users to perform the following actions:
-- Add Todo: Create new To-Do items.
-- Delete Todo: Remove To-Do items.
-- Update Todo: Modify existing To-Do items.
-- Unique ID: Every To-Do item is assigned a specific ID for easy identification.
-- Security: Incorporates Spring Security for user authentication and authorization. Predefined credentials for login:
-  - Username: Tarun
-  - Password: admin
+- **Add Todo**: Create new To-Do items.
+- **Delete Todo**: Remove To-Do items.
+- **Update Todo**: Modify existing To-Do items.
+- **Unique ID**: Every To-Do item is assigned a specific ID for easy identification.
+- *Security*: Incorporates Spring Security for user authentication and authorization. Predefined credentials for login:
+  - **Username**: Tarun
+  - **Password**: admin
 
 ## Contributing
 
