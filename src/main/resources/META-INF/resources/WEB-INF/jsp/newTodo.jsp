@@ -22,33 +22,24 @@
         <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
     </ul>	
 </nav>
-<h2> Your ToDO List </h2>
-<div class="containers" style="margin-left: 20px;">
-    <table class="table">
-        <thead>
-            <th>ID</th>
-            <th>Description</th>
-            <th>Duration</th>
-            <th>Delete </th>
-            <th>Update </th>
-        </thead>
-        <tbody>
-            <c:forEach items="${todos}" var="todo">
-                <tr>
-                    <td>${todo.id}</td>
-                    <td>${todo.description}</td>
-                    <td>${todo.date}</td>
-                    <td><a href="delete-todo/${todo.id}" class="btn btn-warning"> Delete </a></td>
-                    <td><a href="update-todo?id=${todo.id}" class="btn btn-warning"> Update </a></td>
-                </tr>
-            </c:forEach>
-        </tbody>
-    </table>
-    <div><a href="add-todo" class="btn btn-success"> Add New Todo </a> </div>
-<div>
+    <h2> Add New Todo </h2>
+    <form:form method="post" modelAttribute="todo">
+        <div class="form-group">
+            <label for="id">ID:</label>
+            <form:hidden path="id" id="id" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="description">Enter Description:</label>
+            <form:input path="description" id="description" class="form-control" placeholder="${todo.description}" />
+            <form:errors path="description" class="cssClass"></form:errors><br>
+        </div>
+        <div class="form-group">
+            <label for="date">Enter Date:</label>
+            <form:input path="date" id="date" type="date" class="form-control" placeholder="${todo.date}" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form:form>
 
-    <script src="webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-    <script src="webjars/jquery/3.6.0/jquery.min.js"></script>
     
 </body>
 </html>
